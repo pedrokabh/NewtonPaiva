@@ -61,6 +61,7 @@ public class Lista01 {
     }
     
     public static void Exercicio03(){
+    	
     	System.out.println("----- Exercicio 3 -----");
     	
     	System.out.println("Digite um valor para saber o troco:");
@@ -86,7 +87,7 @@ public class Lista01 {
     		
 		while(valor > 0){
 			for (String key : dictionary.keySet()){
-				if (valor / Double.parseDouble(key) > 0){
+				if (valor / Double.parseDouble(key) > 1){
 					valor -= Double.parseDouble(key);
 					dictionary.put(key, dictionary.get(key) + 1);
 					break;
